@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify Face</title>
+</head>
+<body>
+    <h2>Face Verification</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        Upload Face: <input type="file" name="photo"><br><br>
+        <button type="submit">Verify</button>
+    </form>
+</body>
+</html>
